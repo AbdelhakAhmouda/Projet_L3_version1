@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="580.0" styleClass="accueil" stylesheets="@../css/a.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.pageAccueil_Controller">
+   <children>
+      <JFXButton fx:id="connexion" buttonType="RAISED" layoutX="211.0" layoutY="334.0" onMouseClicked="#connexion" prefHeight="61.0" prefWidth="194.0" ripplerFill="RED" style="-fx-background-color: #222456;" text="Connexion" textFill="#fffefe">
+         <font>
+            <Font name="Papyrus" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="106.0" layoutY="135.0" text="Welcome My dear utilisateur">
+         <font>
+            <Font name="Papyrus" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="exit" fitHeight="40.0" fitWidth="40.0" layoutX="495.0" layoutY="47.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/false-2061132_960_720.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+.root{
+    -fx-background-image: url("../images/tealized.jpg");
+}
+
+.inscription{
+    -fx-background-image: url("../images/inscription2.jpg");
+
+
+}
+
+.accueil{
+    -fx-background-image: url("../images/google-classroom.png");
+}
+
+.text-field {
+    -fx-font-family: Cortoba;
+    -fx-text-fill: #3f3538 ;
+}
+
+.buttomabove:hover{
+    -fx-background-color: #ffffff;
+}
+
+.combofont{
+    -fx-font-size: 14px;
+
+    -fx-font-family: Verdana;
+}

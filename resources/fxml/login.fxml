@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #0f2b39;" stylesheets="@../css/a.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+    <children>
+      <AnchorPane fx:id="Header" layoutY="-2.0" opacity="0.45" prefHeight="100.0" prefWidth="700.0" style="-fx-background-color: #4183D7;" />
+        <ImageView fx:id="buttomExit" fitHeight="26.0" fitWidth="18.0" layoutX="668.0" layoutY="9.0" onMouseClicked="#exit" onMouseEntered="#setHover" onMouseExited="#setDefault" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/error.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="66.0" fitWidth="18.0" layoutX="642.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" styleClass="buttom">
+            <image>
+                <Image url="@../images/maximize-size-option.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="26.0" fitWidth="18.0" layoutX="615.0" layoutY="9.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/diminish.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="67.0" layoutX="46.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/brackets.png" />
+         </image>
+      </ImageView>
+        <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="131.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/user(4).png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="172.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="131.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/padlock.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="210.0" layoutY="334.0" text="Mot de passe oublié ?" textFill="#4eaea2">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Label>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="465.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/notebook-computer(1).png" />
+            </image>
+        </ImageView>
+        <Label layoutX="452.0" layoutY="334.0" text="Créer votre compte" textFill="#9ba85c" />
+        <JFXButton fx:id="inscrire" layoutX="581.0" layoutY="328.0" onAction="#signup" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #165D5C;" text="S'inscrire" textFill="#fcf8f8">
+            <font>
+                <Font name="Lucida Calligraphy Italic" size="13.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+        <JFXTextField fx:id="username" focusColor="#d36767" labelFloat="true" layoutX="172.0" layoutY="150.0" promptText="Nom d'utilisateur" style="-fx-text-fill: #ffffff;" unFocusColor="#030101" />
+      <JFXPasswordField fx:id="password" focusColor="#d36767" labelFloat="true" layoutX="172.0" layoutY="201.0" maxWidth="149.0" minWidth="149.0" prefHeight="31.0" prefWidth="149.0" promptText="Mot de passe" style="-fx-text-fill: #ffffff;" unFocusColor="#030101" />
+        <JFXButton fx:id="connexion" buttonType="RAISED" layoutX="304.0" layoutY="260.0" onAction="#connexion" prefHeight="18.0" prefWidth="93.0" ripplerFill="#f50707" style="-fx-background-color: #222484;" text="Connexion" textFill="WHITE">
+            <font>
+                <Font name="Papyrus" size="13.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+      <Label layoutX="129.0" layoutY="27.0" prefHeight="17.0" prefWidth="123.0" text="Classroom" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="27.0" text="Mangment" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semilight" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="27.0" text="System" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semilight" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="131.0" layoutY="61.0" prefHeight="0.0" prefWidth="308.0" />
+      <Label layoutX="131.0" layoutY="64.0" text="Make learning easy for everyone" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semilight" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
